@@ -33,3 +33,10 @@ const makeSakura = () => {
 };
 
 makeSakura();
+
+document.body.animate([{ background: "#000" }, { background: "#fdd" }], {
+  direction: "alternate",
+  iterations: Infinity,
+  duration: 10000,
+  fill: "both",
+});
