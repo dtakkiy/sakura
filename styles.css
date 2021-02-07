@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  perspective: 1000px;
+}
+
+sakura {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+sakura:before,
+sakura:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #faa;
+  box-shadow: 0 0 2px 2px #faa;
+  transform-origin: 50% 100%;
+  transform: rotate(15deg);
+}
+
+sakura:after {
+  transform: rotate(-15deg);
+}
